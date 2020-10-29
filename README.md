@@ -1,19 +1,19 @@
 hippolite
 
-Putting the Hippo CMS on a diet -- by migrating content out of Hippo
-to another system as a stepwise, incremental maneuver with no
-downtime. In other words, avoid a risky, all-or-nothing, "house moving
-day" switch.
+hippolite is either "queen of the amazons", or...
 
-The destination system is currently to have a growing set of override
-content held as template files in git and to serve those via nginx
-which favors those override files and which falls back to proxying to
-the upstream https://www.couchbase.com server on any content that
-isn't overridden.
+Putting the Hippo CMS on a diet -- by migrating content out of the
+Hippo CMS to another system via a stepwise, incremental approach that
+avoids downtime. In other words, avoid a risky, all-or-nothing, "house
+moving weekend" switch.
+
+The approach is to have nginx serve up local override content files
+and also fall back to proxying to the upstream server of
+https://www.couchbase.com for any content that's not overridden.
 
 Install / dependencies...
 
-For OSX...
+For OSX development...
 
     brew install nginx
 
